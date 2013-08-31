@@ -1,0 +1,7 @@
+<Project DefaultTargets="Deploy" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Import Project="IntegrationTest.script"/>
+  
+  <Target Name="Deploy" DependsOnTargets="TestIntegration"> 
+    <Message Text="Starting to Deploy"/> 
+  </Target> 
+</Project>

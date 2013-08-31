@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="AEGIS.Sudoku.Core.Cell" BaseTypeListCollapsed="true">
+    <Position X="6.25" Y="4.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="AEGIS.Sudoku.Core.Cell.Factory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABCCAAQAMgoAAAEAQgAAAAAAAAkBAgAAgCAgAIDAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_value" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.NullableCell" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAIAIAAAAAQAAAAAAAAAkBAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.CellValue">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Seven" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Six" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Error" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Eight" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Three" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.One" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Unknown" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Two" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Nine" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Four" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Class Name="AEGIS.Sudoku.Core.CellValue.Five" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAIIAAAAAAAQAAEAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.CellValue">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <AssociationLine Name="Eight" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="2.938" />
+        <Point X="3.25" Y="2.938" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Error" Type="AEGIS.Sudoku.Core.CellValue" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="4.063" />
+        <Point X="3.25" Y="4.063" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Five" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="2" />
+        <Point X="3.25" Y="2" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Four" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="1.687" />
+        <Point X="3.25" Y="1.687" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Nine" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="3.25" />
+        <Point X="3.25" Y="3.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="One" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="0.75" />
+        <Point X="3.25" Y="0.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Seven" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="2.625" />
+        <Point X="3.25" Y="2.625" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Six" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="2.312" />
+        <Point X="3.25" Y="2.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Three" Type="AEGIS.Sudoku.Core.CellValue" FixedToPoint="true">
+      <Path>
+        <Point X="2" Y="1.375" />
+        <Point X="3.25" Y="1.375" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Two" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="1.062" />
+        <Point X="3.25" Y="1.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Unknown" Type="AEGIS.Sudoku.Core.CellValue" FixedFromPoint="true">
+      <Path>
+        <Point X="2" Y="3.75" />
+        <Point X="3.25" Y="3.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAABAAQAAMAQEAIEBAAQFBAAEAAiAAAgAiPA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Eight" />
+      <Property Name="Error" />
+      <Property Name="Five" />
+      <Property Name="Four" />
+      <Property Name="Nine" />
+      <Property Name="One" />
+      <Property Name="Seven" />
+      <Property Name="Six" />
+      <Property Name="Three" />
+      <Property Name="Two" />
+      <Property Name="Unknown" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.SetValue">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.CellValueSetter">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_cell" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.Link">
+    <Position X="6.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.CellLinker">
+    <Position X="8" Y="2" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_cell" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="AEGIS.Sudoku.Core.ICellUnderConstruction">
+    <Position X="10.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAEBAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AEGIS.Sudoku.Core.IEditableCell">
+    <Position X="10.75" Y="0.5" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAEBAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AEGIS.Sudoku.Core.ICell">
+    <Position X="10.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACCAAAAIAIAAAAAQAAAAAAAAAkBAgAAAAAgAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="AEGIS.Sudoku.Core.CellErrorCode">
+    <Position X="14" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAEEAAAAIAAAgAAAAAAAABA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="AEGIS.Sudoku.Core.Tristate">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAQAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

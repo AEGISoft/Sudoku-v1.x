@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AEGIS.Sudoku.Core.CellGroup">
+    <Position X="3.5" Y="2.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAICAAAMAAIAQAABAIJAAAkAAAAQAAAAAAAAAACQAAA=</HashCode>
+      <FileName>CellGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.NullableCellGroup" Collapsed="true">
+    <Position X="3.5" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAMAAIAQAAAAIJAAAAAAAAQAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>CellGroup.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.Col">
+    <Position X="6.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Col.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.Row">
+    <Position X="4.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Row.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.Sqr">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAACAAAAAAAAAAgAAAAAABQAAAAIAAAAAAAQA=</HashCode>
+      <FileName>Sqr.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.Cell">
+    <Position X="10.5" Y="1" Width="2.25" />
+    <NestedTypes>
+      <Class Name="AEGIS.Sudoku.Core.Cell.Factory" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Cell.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ABCCAAQAMgoAAAEAQgAAAAAAAAkBAgAAgCAgAIDAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_value" />
+      <Property Name="Row" />
+      <Property Name="Col" />
+      <Property Name="Sqr" />
+      <Property Name="Sudoku" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.Sudoku">
+    <Position X="17.25" Y="2.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AgBAAAAEAAIAAECBRABAAIAAgAEAAgAAAAAAAAAIAAA=</HashCode>
+      <FileName>Sudoku.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.NullableSudoku" Collapsed="true">
+    <Position X="17.25" Y="1" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAAIAAAAARABAAAAAAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sudoku.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="AEGIS.Sudoku.Core.CellValue" Collapsed="true">
+    <Position X="13.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIIAAAAAAAQAAEAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="AEGIS.Sudoku.Core.ICellGroup">
+    <Position X="7.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAMAAIAQAAAAIJAAAAAAAAQAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>CellGroup.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="AEGIS.Sudoku.Core.ISudoku">
+    <Position X="14" Y="2.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAEAAIAAAAARABAAAAAAAEAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sudoku.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

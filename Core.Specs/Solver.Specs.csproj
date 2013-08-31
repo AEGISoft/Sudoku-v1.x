@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{96A8BE04-EBED-43DD-9EE7-42F46AA50BB2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AEGIS.Sudoku.Solver.Specs</RootNamespace>
+    <AssemblyName>AEGIS.Sudoku.Solver.Specs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CellGroup\At_all_times_count_knowns_plus_count_unknowns.cs" />
+    <Compile Include="CellGroup\Mothers\SudokuMother.cs" />
+    <Compile Include="CellGroup\When_creating_a_cellgroup_other_than_row.cs" />
+    <Compile Include="CellGroup\When_multiple_errors_occur_in_the_cellgroup.cs" />
+    <Compile Include="CellGroup\When_only_one_unknown_cell_remains_then_analysing_will.cs" />
+    <Compile Include="CellGroup\When_setting_a_cell_to_value_5.cs" />
+    <Compile Include="CellGroup\When_setting_a_second_cell_to_the_same_value.cs" />
+    <Compile Include="CellValue\WrongCellValueConversionTester.cs" />
+    <Compile Include="CellValue\When_trying_to_convert_10_into_a_cellvalue.cs" />
+    <Compile Include="CellValue\When_converting_a_3_into_a_cellvalue.cs" />
+    <Compile Include="CellValue\When_trying_to_convert_0_into_a_cellvalue.cs" />
+    <Compile Include="CellValue\When_trying_to_convert_34_into_a_cellvalue.cs" />
+    <Compile Include="Cell\Builders\CellBuilder.cs" />
+    <Compile Include="Cell\When_setting_the_value_of_a_cell.cs" />
+    <Compile Include="Cell\When_a_cell_is_created.cs" />
+    <Compile Include="Cell\When_cell_cannot_be_a_9.cs" />
+    <Compile Include="Cell\When_cell_can_be_9.cs" />
+    <Compile Include="Cell\When_only_one_value_is_possible.cs" />
+    <Compile Include="Cell\When_value_is_impossible_and_trying_to_make_it_possible_again.cs" />
+    <Compile Include="Cell\When_value_is_possible.cs" />
+    <Compile Include="CellGroup\When_a_row_is_created.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SudokuMatrix\When_solving_1_star_sudoku.cs" />
+    <Compile Include="SudokuMatrix\When_analysing_a_square_without_a_4_but_whos_row1_and_row2_contain_value_4.cs" />
+    <Compile Include="SudokuMatrix\When_analysing_a_square_without_a_5_but_whos_col1_and_col2_contain_value_5.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AEGIS.Specs.Framework">
+      <HintPath>..\..\..\Artefacts\AEGIS.Specs.Framework\v1.x\AEGIS.Specs.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.5.10112, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Artefacts\nUnit\v2.5.5\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\..\..\Artefacts\Rhino.Mocks\v3.6.0\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Solver.csproj">
+      <Project>{4101555C-665D-4238-B0B3-4EE86D51B821}</Project>
+      <Name>Solver</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

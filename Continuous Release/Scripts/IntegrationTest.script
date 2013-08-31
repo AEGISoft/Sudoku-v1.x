@@ -1,0 +1,7 @@
+<Project DefaultTargets="TestIntegration" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Import Project="UnitTest.script"/>
+  
+  <Target Name="TestIntegration" DependsOnTargets="Test"> 
+    <Message Text="Starting to Test Integration"/> 
+  </Target> 
+</Project>

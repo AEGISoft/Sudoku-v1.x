@@ -1,0 +1,9 @@
+<Project DefaultTargets="DeployToDev" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Import Project="Deploy.script"/>
+  
+  <Target Name="DeployToDev"> 
+    <Message Text="Starting to Deploy on dev"/> 
+    <CallTarget Targets="Deploy"/>
+
+  </Target> 
+</Project>

@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{88355F72-3AA1-49C4-A11E-BC32CADD168F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AEGIS.Sudoku.IO.specs</RootNamespace>
+    <AssemblyName>AEGIS.Sudoku.IO.specs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Mothers\FileAndFolderHelpers.cs" />
+    <Compile Include="Mothers\SudokuFileMother.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Specs\Read9x9SudokuFromXml.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Read9x9SudokuFromXml.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Specs\Read9X9SudokuFromXmlSteps.cs" />
+    <Compile Include="Tests\When_constructing_a_sudoku_from_xml.cs" />
+    <Compile Include="Tests\When_loading_sudokuxml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core\Solver.csproj">
+      <Project>{4101555C-665D-4238-B0B3-4EE86D51B821}</Project>
+      <Name>Solver</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IO\IO.csproj">
+      <Project>{B9E17645-292C-41D6-88EC-A24D0224EAEE}</Project>
+      <Name>IO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="AEGIS.Specs.Framework">
+      <HintPath>..\..\..\Artefacts\AEGIS.Specs.Framework\v1.x\AEGIS.Specs.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeDomUtilities.Extensions">
+      <HintPath>..\packages\CodeDomUtilities.1.1.2.0\lib\net40\CodeDomUtilities.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="CodeDomUtilities.Patterns">
+      <HintPath>..\packages\CodeDomUtilities.1.1.2.0\lib\net40\CodeDomUtilities.Patterns.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.5.10112, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Artefacts\nUnit\v2.5.5\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".svn\all-wcprops" />
+    <None Include=".svn\dir-prop-base" />
+    <None Include=".svn\entries" />
+    <None Include=".svn\text-base\App.config.transform.svn-base" />
+    <None Include=".svn\text-base\IO.specs.csproj.svn-base" />
+    <None Include=".svn\text-base\Read9x9MatrixInText.cs.svn-base" />
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Specs\Read9x9SudokuFromXml.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>Read9x9SudokuFromXml.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".svn\prop-base\" />
+    <Folder Include=".svn\props\" />
+    <Folder Include=".svn\tmp\prop-base\" />
+    <Folder Include=".svn\tmp\props\" />
+    <Folder Include=".svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
