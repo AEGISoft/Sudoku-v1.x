@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{580B
 		Continuous Release\Scripts\UnitTest.script = Continuous Release\Scripts\UnitTest.script
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Version", "Version", "{4309AE18-045F-484B-8A3D-5B96488E9B9E}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Specifications and tests", "Specifications and tests", "{25490524-0C3C-4F32-8225-7508860EAA86}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Solver", "Core\Solver.csproj", "{4101555C-665D-4238-B0B3-4EE86D51B821}"
@@ -28,6 +26,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IO.Tests", "IO.Tests\IO.Tests.csproj", "{20AA47E3-DF0C-4E58-8E77-8A5112F49F81}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Starter", "Starter\Starter.csproj", "{9617CD00-6CD3-4A03-93FD-C32764894C58}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prerequisites", "Prerequisites", "{7456B08D-3EA3-4D77-AF48-03CD20997C98}"
+	ProjectSection(SolutionItems) = preProject
+		_Prerequisites\Install SpecFlow.txt = _Prerequisites\Install SpecFlow.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Properties", "Properties", "{52718758-B98D-4837-B632-8F827C57F1FF}"
+	ProjectSection(SolutionItems) = preProject
+		Continuous Release\Properties\solution.properties = Continuous Release\Properties\solution.properties
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,7 +113,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{580BA768-BB26-4CC1-AD48-F3867146CAE4} = {52C88FDE-7467-40C1-8500-23242D20D854}
-		{4309AE18-045F-484B-8A3D-5B96488E9B9E} = {52C88FDE-7467-40C1-8500-23242D20D854}
+		{52718758-B98D-4837-B632-8F827C57F1FF} = {52C88FDE-7467-40C1-8500-23242D20D854}
 		{96A8BE04-EBED-43DD-9EE7-42F46AA50BB2} = {25490524-0C3C-4F32-8225-7508860EAA86}
 		{88355F72-3AA1-49C4-A11E-BC32CADD168F} = {25490524-0C3C-4F32-8225-7508860EAA86}
 		{20AA47E3-DF0C-4E58-8E77-8A5112F49F81} = {25490524-0C3C-4F32-8225-7508860EAA86}

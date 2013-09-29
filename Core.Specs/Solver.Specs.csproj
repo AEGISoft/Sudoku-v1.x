@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(SolutionDir)\Continuous Release\Properties\solution.properties" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -45,7 +46,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\..\Artefacts\$(AssemblyName)\v1.x</OutputPath>
+    <OutputPath>$(LibrariesDir)\$(SolutionName)\$(NextRelease)\$(AssemblyName)</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -78,19 +79,6 @@
     <Compile Include="SudokuMatrix\When_analysing_a_square_without_a_5_but_whos_col1_and_col2_contain_value_5.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="AEGIS.Specs.Framework">
-      <HintPath>..\..\..\Artefacts\AEGIS.Specs.Framework\v1.x\AEGIS.Specs.Framework.dll</HintPath>
-    </Reference>
-    <Reference Include="nunit.framework, Version=2.5.5.10112, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\Artefacts\nUnit\v2.5.5\nunit.framework.dll</HintPath>
-    </Reference>
-    <Reference Include="Rhino.Mocks">
-      <HintPath>..\..\..\Artefacts\Rhino.Mocks\v3.6.0\Rhino.Mocks.dll</HintPath>
-    </Reference>
-    <Reference Include="System" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
@@ -108,12 +96,23 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Solver.csproj">
-      <Project>{4101555C-665D-4238-B0B3-4EE86D51B821}</Project>
-      <Name>Solver</Name>
-    </ProjectReference>
+    <Reference Include="AEGIS.Specs.Framework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Artefacts\Libraries\Framework\v1.x\AEGIS.Specs.Framework\AEGIS.Specs.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="AEGIS.Sudoku.Solver, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Artefacts\Libraries\Sudoku\v1.x\AEGIS.Sudoku.Solver\AEGIS.Sudoku.Solver.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.5.10112, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Artefacts\ThirdPartyLibraries\nUnit\v2.5.5\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks, Version=3.6.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Artefacts\ThirdPartyLibraries\Rhino.Mocks\v3.6.0\Rhino.Mocks.dll</HintPath>
+    </Reference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
