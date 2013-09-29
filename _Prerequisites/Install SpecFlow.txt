@@ -1,0 +1,5 @@
+The references required to build & test the solution are included in the 'ThirdPartyReferences' GitHub project
+-> copy the 'SpecFlow' folder to the 'Artefacts' folder (next to the 'Solutions folder')
+
+In order to add more specifications, install the specflow plugin:
+http://visualstudiogallery.msdn.microsoft.com/9915524d-7fb0-43c3-bb3c-a8a14fbd40ee

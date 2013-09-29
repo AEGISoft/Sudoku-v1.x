@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\Artefacts\$(AssemblyName)\v1.x</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -57,19 +57,13 @@
     <Reference Include="AEGIS.Specs.Framework">
       <HintPath>..\..\..\Artefacts\AEGIS.Specs.Framework\v1.x\AEGIS.Specs.Framework.dll</HintPath>
     </Reference>
-    <Reference Include="CodeDomUtilities.Extensions">
-      <HintPath>..\packages\CodeDomUtilities.1.1.2.0\lib\net40\CodeDomUtilities.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="CodeDomUtilities.Patterns">
-      <HintPath>..\packages\CodeDomUtilities.1.1.2.0\lib\net40\CodeDomUtilities.Patterns.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework, Version=2.5.5.10112, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Artefacts\nUnit\v2.5.5\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="TechTalk.SpecFlow">
-      <HintPath>..\packages\SpecFlow.1.9.0\lib\net35\TechTalk.SpecFlow.dll</HintPath>
+      <HintPath>..\..\..\Artefacts\SpecFlow\1.9.2\TechTalk.SpecFlow.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
